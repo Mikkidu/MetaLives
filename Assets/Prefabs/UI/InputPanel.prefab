@@ -157,7 +157,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -616031616343868162}
+        m_TargetAssemblyTypeName: InputNamePanelUI, Assembly-CSharp
+        m_MethodName: CheckInputField
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -481,11 +493,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6685742200565226286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -616031616343868162}
+        m_TargetAssemblyTypeName: InputNamePanelUI, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4574077910064940643
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +948,7 @@ GameObject:
   - component: {fileID: 5451887367370280628}
   - component: {fileID: 1013873667909595881}
   - component: {fileID: 2490037595714855115}
+  - component: {fileID: -616031616343868162}
   m_Layer: 5
   m_Name: InputPanel
   m_TagString: Untagged
@@ -991,6 +1016,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-616031616343868162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6854985655313737295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9e21e03a9e1184fbd0507190c2a265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputText: {fileID: 3078268431718232782}
+  _acceptButton: {fileID: 4181708727955515116}
 --- !u!1 &8784909449700241656
 GameObject:
   m_ObjectHideFlags: 0
