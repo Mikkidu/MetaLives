@@ -13,9 +13,6 @@ public class LobbyUI : MonoBehaviour
     [Header("Titles")]
     [SerializeField] private TextMeshProUGUI _playerNameText;
 
-    
-
-
     private void Start()
     {
         _playerNameInput.OnNameAcceptedEvent += _launcher.SaveNickName;
